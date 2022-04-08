@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/todayFragment"
+        android:name="com.example.endo.fragments.todayflow.TodayFragment"
+        android:label="fragment_today"
+        tools:layout="@layout/fragment_today">
+
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.endo.fragments.splashflow.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" />
+    <fragment
+        android:id="@+id/dictionaryFragment"
+        android:name="com.example.endo.fragments.dictionaryflow.DictionaryFragment"
+        android:label="DictionaryFragment" />
+
+    <fragment
+        android:id="@+id/learnFragment"
+        android:name="com.example.endo.fragments.learnflow.LearnFragment"
+        android:label="fragment_learn"
+        tools:layout="@layout/fragment_learn" />
+    <fragment
+        android:id="@+id/dictionaryCategoryFragment"
+        android:name="com.example.endo.fragments.dictionaryflow.DictionaryCategoryFragment"
+        android:label="fragment_dictionary_category"
+        tools:layout="@layout/fragment_dictionary_category">
+        <action
+            android:id="@+id/action_dictionaryCategoryFragment_to_wordsFragment"
+            app:destination="@id/wordsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/synonymsCategoryFragment"
+        android:name="com.example.endo.fragments.synonymsflow.SynonymsCategoryFragment"
+        android:label="fragment_dictionary_category"
+        tools:layout="@layout/fragment_dictionary_category">
+        <action
+            android:id="@+id/action_dictionaryCategorySynonymsFragment_to_wordsFragment"
+            app:destination="@id/wordsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myDictionaryFragment"
+        android:name="com.example.endo.fragments.dictionaryflow.MyDictionaryFragment"
+        android:label="fragment_my_dictionary"
+        tools:layout="@layout/fragment_my_dictionary" />
+    <fragment
+        android:id="@+id/addWordsSheetDialogFragment"
+        android:name="com.example.endo.bottomsheetdialogs.AddDictionaryCategorySheetDialogFragment"
+        android:label="AddWordsSheetDialogFragment" />
+    <fragment
+        android:id="@+id/grammarFragment"
+        android:name="com.example.endo.fragments.grammarflow.GrammarFragment"
+        android:label="fragment_grammar"
+        tools:layout="@layout/fragment_grammar" />
+    <fragment
+        android:id="@+id/grammarDetailFragment"
+        android:name="com.example.endo.fragments.grammarflow.GrammarDetailFragment"
+        android:label="fragment_grammar_detail"
+        tools:layout="@layout/fragment_grammar_detail" />
+    <fragment
+        android:id="@+id/grammarReadFragment"
+        android:name="com.example.endo.fragments.grammarflow.GrammarReadFragment"
+        android:label="fragment_grammar_read"
+        tools:layout="@layout/fragment_grammar_read" />
+    <fragment
+        android:id="@+id/privateOfficeFragment"
+        android:name="com.example.endo.fragments.privateflow.PrivateOfficeFragment"
+        android:label="fragment_private_office"
+        tools:layout="@layout/fragment_private_office" />
+    <fragment
+        android:id="@+id/checkGrammarFragment"
+        android:name="com.example.endo.fragments.grammarflow.CheckGrammarFragment"
+        android:label="fragment_check_grammar"
+        tools:layout="@layout/fragment_check_grammar" />
+    <fragment
+        android:id="@+id/grammarResultFragment"
+        android:name="com.example.endo.fragments.grammarflow.GrammarResultFragment"
+        android:label="fragment_grammar_resultk"
+        tools:layout="@layout/fragment_grammar_resultk" />
+    <fragment
+        android:id="@+id/onBoardFragment"
+        android:name="com.example.endo.fragments.boardingflow.OnBoardFragment"
+        android:label="fragment_on_board"
+        tools:layout="@layout/fragment_on_board" />
+    <fragment
+        android:id="@+id/wordsFragment"
+        android:name="com.example.endo.fragments.dictionaryflow.WordsFragment"
+        android:label="fragment_words"
+        tools:layout="@layout/fragment_words">
+
+        <argument
+            android:name="dictionaryCategoryModel"
+            app:argType="com.example.db.models.DictionaryCategoryModel" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/synonymsFragment"
+        android:name="com.example.endo.fragments.synonymsflow.SynonymsFragment"
+        android:label="SynonymsFragment"
+        tools:layout="@layout/fragment_synonyms_category"
+        />
+    <fragment
+        android:id="@+id/antonymsFragment"
+        android:name="com.example.endo.fragments.antonymsflow.AntonymsFragment"
+        android:label="AntonymsFragment"
+        tools:layout="@layout/fragment_antonyms_category"/>
+    <fragment
+        android:id="@+id/antonymsCategoryFragment"
+        android:name="com.example.endo.fragments.antonymsflow.AntonymsCategoryFragment"
+        android:label="AntonymsCategoryFragment" />
+
+</navigation>
