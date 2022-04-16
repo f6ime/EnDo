@@ -33,7 +33,6 @@ class SynonymsFragment :
     private val adapter = SynonymsAdapter()
     private val synonymsDialogAdapter= SynonymsDialogAdapter()
     private var categoryName = ""
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         changeToolbarTitle()
