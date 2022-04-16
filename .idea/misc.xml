@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/activity_main.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/fragment_add_antonyms_category_sheet_dialog.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/fragment_add_antonyms_category_sheet_dialog_fragment.xml" value="0.2630208333333333" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/fragment_add_synonyms_bottom_sheet_dialog.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/fragment_add_synonyms_category_sheet_dialog_fragment.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/fragment_add_words_sheet_diaolg.xml" value="0.27025641025641023" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/fragment_antonyms.xml" value="0.2630208333333333" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/fragment_antonyms_category.xml" value="0.176" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/fragment_check_grammar.xml" value="0.2630208333333333" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/fragment_dictionary.xml" value="0.2630208333333333" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/fragment_dictionary_category.xml" value="0.27025641025641023" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/fragment_my_dictionary.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/fragment_splash.xml" value="0.17135416666666667" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/fragment_synonyms.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/fragment_synonyms_category.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/fragment_words.xml" value="0.27025641025641023" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/item_antonyms.xml" value="0.2" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/item_antonyms_category.xml" value="0.2630208333333333" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/item_category.xml" value="0.2630208333333333" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/item_dictionary_category.xml" value="0.27025641025641023" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/item_recently_added_synonyms.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/item_recently_added_words.xml" value="0.27025641025641023" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/item_synonyms.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/item_synonyms_category.xml" value="0.27025641025641023" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/item_synonyms_dialog.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/item_words.xml" value="0.27025641025641023" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/synonyms_dialog.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/translate_with_image_dialog.xml" value="0.27025641025641023" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/item_antonyms.xml" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>
