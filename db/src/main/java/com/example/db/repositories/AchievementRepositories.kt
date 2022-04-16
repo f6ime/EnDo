@@ -10,7 +10,6 @@ class AchievementRepositories @Inject constructor(
 ) {
 
     fun getData(): Flow<List<AchievementsModel>> = dao.getData()
-
     suspend fun insert(model: AchievementsModel) = dao.insertData(model)
     suspend fun update(model: AchievementsModel) = dao.update(model)
 

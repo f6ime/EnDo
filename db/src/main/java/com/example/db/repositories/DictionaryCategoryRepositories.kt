@@ -11,7 +11,7 @@ import javax.inject.Inject
 class DictionaryCategoryRepositories @Inject constructor(
     private val dao: DictionaryCategoryDao
 ) {
-    fun getData(): Flow<List<DictionaryCategoryModel>> = dao.getData()
+    fun getData(): Flow<List<DictionaryCategoryModel>?> { return dao.getData() }
     suspend fun insert(model: DictionaryCategoryModel) = dao.insertData(model)
     suspend fun update(model: DictionaryCategoryModel) = dao.update(model)
 }

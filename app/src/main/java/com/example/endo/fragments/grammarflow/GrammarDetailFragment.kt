@@ -19,10 +19,6 @@ class GrammarDetailFragment :
     BaseFragment<FragmentGrammarDetailBinding>(FragmentGrammarDetailBinding::inflate),
     BaseAdapter.IBaseAdapterClickListener<CategoryModel> {
     val adapter = GrammarDetailAdapter()
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-    }
 
     override fun initClickers() {
     }

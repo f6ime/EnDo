@@ -53,7 +53,7 @@ class DictionaryCategoryFragment :
     override fun initObserver() {
         viewModel.viewModelScope.launch {
             viewModel.dictionaryCategoryModel.collect {
-                if (it != null) {
+                it?.let {
                     adapter.setData(it)
                 }
             }

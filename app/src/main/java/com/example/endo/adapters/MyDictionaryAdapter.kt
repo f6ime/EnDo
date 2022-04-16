@@ -11,6 +11,6 @@ class MyDictionaryAdapter : BaseAdapter<CategoryModel, ItemDictionaryCategoryBin
     listOf(), ItemDictionaryCategoryBinding::inflate
 ) {
     override fun onBind(binding: ItemDictionaryCategoryBinding, model: CategoryModel) {
-        binding.categoryBtn.text = model.category
+        binding.categoryTv.text = model.category
     }
 }

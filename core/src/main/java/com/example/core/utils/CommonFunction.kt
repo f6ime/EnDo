@@ -7,8 +7,7 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.onEach
 
 object CommonFunction {
-    fun showBottomSheet(bottomSheetDialog: BottomSheetDialogFragment,fragmentActivity: FragmentActivity,tag:String) {
-        bottomSheetDialog.show(fragmentActivity.supportFragmentManager, tag)
-    }
-
+        fun showBottomSheet(bottomSheetDialog: BottomSheetDialogFragment,fragmentActivity: FragmentActivity,tag:String) {
+            bottomSheetDialog.show(fragmentActivity.supportFragmentManager, tag)
+        }
 }

@@ -51,7 +51,5 @@ class MyDictionaryFragment :
     }
 
     override fun initObserver() {
-
-
     }
 }

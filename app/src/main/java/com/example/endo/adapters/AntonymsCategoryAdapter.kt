@@ -4,15 +4,15 @@ import com.example.core.base.BaseAdapter
 import com.example.db.models.AntonymsCategoryModel
 import com.example.db.models.SynonymsCategoryModel
 import com.example.endo.R
+import com.example.endo.databinding.ItemAntonymsCategoryBinding
 import com.example.endo.databinding.ItemDictionaryCategoryBinding
+import com.example.endo.databinding.ItemSynonymsCategoryBinding
 
-class AntonymsCategoryAdapter : BaseAdapter<AntonymsCategoryModel, ItemDictionaryCategoryBinding>(
-    R.layout.item_buttons,
-    listOf(), ItemDictionaryCategoryBinding::inflate
+class AntonymsCategoryAdapter  : BaseAdapter<AntonymsCategoryModel, ItemAntonymsCategoryBinding>(
+    R.layout.item_synonyms_category,
+    listOf(), ItemAntonymsCategoryBinding::inflate
 ) {
-
-    override fun onBind(binding: ItemDictionaryCategoryBinding, model: AntonymsCategoryModel) {
-        binding.categoryBtn.text = model.categoryName
+    override fun onBind(binding: ItemAntonymsCategoryBinding, model: AntonymsCategoryModel) {
+        binding.antonymsCategoryTv.text = model.categoryName
     }
-
 }

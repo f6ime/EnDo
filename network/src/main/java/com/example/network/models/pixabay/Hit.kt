@@ -5,9 +5,8 @@ import com.google.gson.annotations.SerializedName
 import com.squareup.moshi.Json
 
 data class Hit(
-
-
-    @Json(name = "id") @Expose
+    @Json(name = "id")
+    @Expose
     private var id: Int? = null,
     @SerializedName("pageURL")
     @Expose

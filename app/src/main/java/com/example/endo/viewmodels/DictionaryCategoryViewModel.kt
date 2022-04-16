@@ -27,8 +27,7 @@ class DictionaryCategoryViewModel @Inject constructor(
             repositories.insert(model)
         }
 
-    fun updateData(model: DictionaryCategoryModel) =
-        viewModelScope.launch(Dispatchers.IO) { repositories.update(model) }
+
 
     init {
         getData()
@@ -37,7 +36,9 @@ class DictionaryCategoryViewModel @Inject constructor(
     private fun getData() {
         viewModelScope.launch {
             repositories.getData().collect {
-                _dictionaryCategoryModel.emit(it)
+                it?.let {
+                    _dictionaryCategoryModel.emit(it)
+                }
             }
         }
     }

@@ -7,7 +7,7 @@
     tools:context=".fragments.dictionaryflow.WordsFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/words_recycler"
+        android:id="@+id/word_recycler"
         android:layout_width="0dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

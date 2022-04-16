@@ -4,7 +4,8 @@ import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
 data class ImageResult(
-    @SerializedName("total") @Expose
+    @SerializedName("total")
+    @Expose
      var total: Int? = null,
     @SerializedName("totalHits")
     @Expose

@@ -5,7 +5,7 @@ import android.view.View
 import androidx.fragment.app.viewModels
 import com.example.core.base.BaseAdapter
 import com.example.core.base.BaseFragment
-import com.example.core.base.showToast
+import com.example.core.extensions.showToast
 import com.example.db.models.WordsModel
 import com.example.endo.adapters.WordsInTodayAdapter
 import com.example.endo.databinding.FragmentTodayBinding

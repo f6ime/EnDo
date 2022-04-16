@@ -14,30 +14,4 @@ class WordsAdapter : BaseAdapter<WordsModel, ItemWordsBinding>(
         binding.wordTv.text = model.wordInEnglish
     }
 
-//    fun changeWordToRussian(model: WordsModel) {
-//        with(binding) {
-//            changeViewCard(true)
-//            wordTv.text = model.wordInRussian
-//        }
-//    }
-//
-//    fun changeWordToEnglish(model: WordsModel) {
-//        with(binding) {
-//            changeViewCard(false)
-//            wordTv.text = model.wordInEnglish
-//        }
-//    }
-//
-//    @SuppressLint("ResourceAsColor")
-//    private fun changeViewCard(isWithImage: Boolean) {
-//        if (isWithImage) {
-//            binding.translateWrapper.setBackgroundResource(R.drawable.blue_gradient)
-//            binding.wordTv.setTextColor(R.color.white)
-//            binding.associationImage.visible()
-//        } else {
-//            binding.translateWrapper.setBackgroundResource(R.color.white)
-//            binding.wordTv.setTextColor(R.color.black_color)
-//            binding.associationImage.gone()
-//        }
-//    }
 }

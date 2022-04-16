@@ -4,10 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupWithNavController
-import com.example.core.base.gone
-import com.example.core.base.visible
+import com.example.core.extensions.gone
+import com.example.core.extensions.visible
 import com.example.endo.R
 import com.example.endo.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint

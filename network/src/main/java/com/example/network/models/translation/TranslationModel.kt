@@ -4,7 +4,8 @@ import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
 data class TranslationModel(
-    @SerializedName("responseData") @Expose
+    @SerializedName("responseData")
+    @Expose
     var responseData: ResponseData? = null,
 
     @SerializedName("quotaFinished")

@@ -55,7 +55,7 @@ class WordsFragment : BaseFragment<FragmentWordsBinding>(FragmentWordsBinding::i
     }
 
     override fun initAdapter() {
-        binding.wordsRecycler.adapter = adapter
+        binding.wordRecycler.adapter = adapter
         adapter.listener = this
     }
 
