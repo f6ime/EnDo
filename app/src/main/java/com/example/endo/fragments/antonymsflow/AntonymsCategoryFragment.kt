@@ -9,11 +9,17 @@ import com.example.core.base.BaseAdapter
 import com.example.core.base.BaseFragment
 import com.example.core.utils.CommonFunction
 import com.example.db.models.AntonymsCategoryModel
+import com.example.db.models.SynonymsCategoryModel
 import com.example.endo.adapters.AntonymsCategoryAdapter
+import com.example.endo.adapters.SynonymsCategoryAdapter
 import com.example.endo.bottomsheetdialogs.AddAntonymsCategorySheetDialogFragment
 import com.example.endo.bottomsheetdialogs.AddSynonymsBottomSheetDialog
+import com.example.endo.bottomsheetdialogs.AddSynonymsCategorySheetDialogFragment
 import com.example.endo.databinding.FragmentAntonymsCategoryBinding
+import com.example.endo.databinding.FragmentSynonymsCategoryBinding
+import com.example.endo.fragments.synonymsflow.SynonymsCategoryFragmentDirections
 import com.example.endo.viewmodels.AntonymsCategoryViewModel
+import com.example.endo.viewmodels.SynonymsCategoryViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
@@ -39,7 +45,7 @@ class AntonymsCategoryFragment : BaseFragment<FragmentAntonymsCategoryBinding>
     override fun initClickers() {
         binding.addWordCategoryAntonyms.setOnClickListener {
             CommonFunction.showBottomSheet(
-                AddSynonymsBottomSheetDialog(),
+                AddAntonymsCategorySheetDialogFragment(),
                 requireActivity(),
                 ""
             )
@@ -49,7 +55,7 @@ class AntonymsCategoryFragment : BaseFragment<FragmentAntonymsCategoryBinding>
     override fun initObserver() {
         viewModel.viewModelScope.launch {
             viewModel.antonymsCategoryModel.collect {
-                if (it != null){
+                if (it != null) {
                     adapter.setData(it)
                 }
             }
@@ -62,7 +68,5 @@ class AntonymsCategoryFragment : BaseFragment<FragmentAntonymsCategoryBinding>
                 model
             )
         findNavController().navigate(action)
-
     }
-    }
-
+}

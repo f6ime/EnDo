@@ -9,7 +9,7 @@ import com.example.endo.databinding.ItemDictionaryCategoryBinding
 import com.example.endo.databinding.ItemSynonymsCategoryBinding
 
 class AntonymsCategoryAdapter  : BaseAdapter<AntonymsCategoryModel, ItemAntonymsCategoryBinding>(
-    R.layout.item_synonyms_category,
+    R.layout.item_antonyms_category,
     listOf(), ItemAntonymsCategoryBinding::inflate
 ) {
     override fun onBind(binding: ItemAntonymsCategoryBinding, model: AntonymsCategoryModel) {

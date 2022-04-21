@@ -58,5 +58,4 @@ class SynonymsCategoryFragment : BaseFragment<FragmentSynonymsCategoryBinding>
             }
         }
     }
-
 }

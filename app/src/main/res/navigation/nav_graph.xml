@@ -113,16 +113,6 @@
     </fragment>
 
     <fragment
-        android:id="@+id/antonymsFragment"
-        android:name="com.example.endo.fragments.antonymsflow.AntonymsFragment"
-        android:label="AntonymsFragment"
-        tools:layout="@layout/fragment_antonyms_category">
-        <argument
-            android:name="antonymsCategoryModel"
-            app:argType="com.example.db.models.AntonymsCategoryModel"/>
-
-    </fragment>
-    <fragment
         android:id="@+id/antonymsCategoryFragment"
         android:name="com.example.endo.fragments.antonymsflow.AntonymsCategoryFragment"
         android:label="fragment_antonyms_category"
@@ -131,5 +121,15 @@
             android:id="@+id/action_antonymsCategoryFragment_to_antonymsFragment"
             app:destination="@id/antonymsFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/antonymsFragment"
+        android:name="com.example.endo.fragments.antonymsflow.AntonymsFragment"
+        android:label="fragment_antonyms"
+        tools:layout="@layout/fragment_antonyms">
+        <argument
+            android:name="antonymsCategoryModel"
+            app:argType="com.example.db.models.AntonymsCategoryModel"/>
+    </fragment>
+
 
 </navigation>

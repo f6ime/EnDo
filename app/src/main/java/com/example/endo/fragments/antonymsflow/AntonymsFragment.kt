@@ -13,29 +13,27 @@ import com.example.core.base.BaseFragment
 import com.example.core.extensions.getDialog
 import com.example.core.utils.CommonFunction
 import com.example.db.models.AntonymsModel
-import com.example.db.models.SynonymsModel
 import com.example.endo.R
 import com.example.endo.activity.MainActivity
 import com.example.endo.adapters.AntonymsAdapter
-import com.example.endo.adapters.SynonymsDialogAdapter
+import com.example.endo.adapters.AntonymsDialogAdapter
+import com.example.endo.bottomsheetdialogs.AddAntonymsCategorySheetDialogFragment
 import com.example.endo.bottomsheetdialogs.AddSynonymsBottomSheetDialog
 import com.example.endo.databinding.FragmentAntonymsBinding
-import com.example.endo.fragments.synonymsflow.SynonymsFragmentArgs
 import com.example.endo.viewmodels.AntonymsViewModel
-import com.example.endo.viewmodels.SynonymsViewModel
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
-
+@AndroidEntryPoint
 class AntonymsFragment  :
     BaseFragment<FragmentAntonymsBinding>(FragmentAntonymsBinding::inflate),
     BaseAdapter.IBaseAdapterClickListener<AntonymsModel> {
     private val args: AntonymsFragmentArgs by navArgs()
     private val viewModel: AntonymsViewModel by viewModels()
     private val adapter = AntonymsAdapter()
-    private val antonymDialogAdapter = SynonymsDialogAdapter()
+    private val antonymsDialogAdapter= AntonymsDialogAdapter()
     private var categoryName = ""
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         changeToolbarTitle()
@@ -48,7 +46,7 @@ class AntonymsFragment  :
     override fun initClickers() {
         binding.addAntonymsFab.setOnClickListener {
             CommonFunction.showBottomSheet(
-                AddSynonymsBottomSheetDialog(),
+                AddAntonymsCategorySheetDialogFragment(),
                 requireActivity(),
                 categoryName
             )
@@ -77,15 +75,16 @@ class AntonymsFragment  :
     }
 
     override fun onClick(model: AntonymsModel, position: Int) {
-//        val dialog = requireContext().getDialog(R.layout.synonyms_dialog)
-//        val synonymsWord = dialog.findViewById<TextView>(R.id.word)
-//        val closeBtn = dialog.findViewById<Button>(R.id.close_btn)
-//        val synonymRecycler= dialog.findViewById<RecyclerView>(R.id.synonyms_recycler)
-//
-//        synonymsWord.text = model.synonymsWord
-//        synonymRecycler.adapter = synonymsDialogAdapter
-//        synonymsDialogAdapter.listener=this
-//        closeBtn.setOnClickListener { dialog.dismiss() }
-//        dialog.show()    }
+        val dialog = requireContext().getDialog(R.layout.antonyms_dialog)
+        val antonymsWord = dialog.findViewById<TextView>(R.id.word)
+        val closeBtn = dialog.findViewById<Button>(R.id.close_btn)
+        val antonymsRecycler= dialog.findViewById<RecyclerView>(R.id.antonyms_recycler)
+
+        antonymsWord.text = model.antonymsWord
+        antonymsRecycler.adapter = antonymsDialogAdapter
+        antonymsDialogAdapter.listener=this
+        closeBtn.setOnClickListener { dialog.dismiss() }
+        dialog.show()
     }
-}
+    }
+

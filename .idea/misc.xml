@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/activity_main.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/antonyms_dialog.xml" value="0.8" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/fragment_add_antonyms_bottom_sheet_dialog.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/fragment_add_antonyms_category_sheet_dialog.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/fragment_add_antonyms_category_sheet_dialog_fragment.xml" value="0.2630208333333333" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/fragment_add_synonyms_bottom_sheet_dialog.xml" value="0.27447916666666666" />
@@ -19,10 +21,11 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/fragment_synonyms.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/fragment_synonyms_category.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/fragment_words.xml" value="0.27025641025641023" />
-        <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/item_antonyms.xml" value="0.2" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/item_antonyms.xml" value="0.536" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/item_antonyms_category.xml" value="0.2630208333333333" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/item_category.xml" value="0.2630208333333333" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/item_dictionary_category.xml" value="0.27025641025641023" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/item_recently_added_antonyms.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/item_recently_added_synonyms.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/item_recently_added_words.xml" value="0.27025641025641023" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/EnDo/app/src/main/res/layout/item_synonyms.xml" value="0.27447916666666666" />

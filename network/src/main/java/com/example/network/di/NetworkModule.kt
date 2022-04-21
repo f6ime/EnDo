@@ -1,6 +1,7 @@
 package com.example.network.di
 
 import com.example.core.utils.Constants
+import com.example.network.api.AntonymsApi
 import com.example.network.api.PixabayApi
 import com.example.network.api.SynonymsApi
 import com.example.network.api.TranslationApi
@@ -36,4 +37,12 @@ object NetworkModule {
         return Retrofit.Builder().addConverterFactory(GsonConverterFactory.create())
             .baseUrl(Constants.SYNONYMS_BASE_URL).build().create(SynonymsApi::class.java)
     }
+
+    @Provides
+    @Singleton
+    fun provideAntonymsApi() : AntonymsApi{
+        return Retrofit.Builder().addConverterFactory(GsonConverterFactory.create())
+            .baseUrl(Constants.ANTONYMS_BASE_URL).build().create(AntonymsApi::class.java)
+    }
+
 }
